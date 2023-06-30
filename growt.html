@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>growth</title>
+<link rel="stylesheet" type="text/css" href="max.css">
+
+
+<h1>growth-suplements</h1>
+
+<script src="pesquisa.js"></script>
+
+<form onsubmit="redirectPage(event)">
+    <input type="text" name="search" placeholder="Pesquisar...">
+    <input type="submit" value="Buscar">
+  </form>
+  
+  <script>
+    function redirectPage(event) {
+      event.preventDefault(); // Impede o envio do formulário padrão
+  
+      var searchValue = document.querySelector('input[name="search"]').value;
+      var url = '';
+  
+      // Verifique o valor da pesquisa e redirecione para a página apropriada
+      if (searchValue === 'wey') {
+        url = 'wey.html';
+      } else if (searchValue === 'pagina2') {
+        url = 'https://www.exemplo.com/pagina2';
+      } else if (searchValue === 'pagina3') {
+        url = 'https://www.exemplo.com/pagina3';
+      } else {
+        // Página padrão se não houver correspondência
+        url = 'https://www.exemplo.com/pagina-padrao';
+      }
+  
+      window.location.href = url;
+    }
+  </script>
+  
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</head>
+
+
+</html>
